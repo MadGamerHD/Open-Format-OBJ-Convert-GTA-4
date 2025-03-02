@@ -27,7 +27,7 @@
 2. **Usage:**  
    Run the tool using:
    ```bash
-   python openformat_converter.py
+   OpenFormatObjConverterGUI.pyw
    ```
    Use the GUI to select an `.odr` file and initiate conversion. The converted `.obj` and `.mtl` files will be saved in the same directory as the original file.
 
