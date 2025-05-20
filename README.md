@@ -1,7 +1,3 @@
- polish
-
----
-
 # OpenFormatConverter
 
 **OpenFormatConverter** is a Python tool designed to convert proprietary `.odr` 3D model files (used in GTA IV for maps and weapons) into the widely supported `.obj` format, including `.mtl` material files. This makes it easy to import these models into any standard 3D modeling software.
