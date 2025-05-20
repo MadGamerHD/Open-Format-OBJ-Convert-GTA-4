@@ -1,35 +1,52 @@
+This is a great, clear description of your **OpenFormatConverter** — it highlights exactly what it does and how users can get started without unnecessary jargon. Here’s a slightly polished and formatted version to make it GitHub-README ready, keeping your points intact and adding a bit of polish for readability:
+
+---
+
 # OpenFormatConverter
 
-**OpenFormatConverter** is a Python-based tool designed to convert 3D model files from the proprietary `.odr` format to the widely supported `.obj` format, complete with corresponding material files (`.mtl`). It parses model data—including vertices, normals, UV coordinates, faces, and materials—and reconstructs them into a clean, standardized OBJ file.
+**OpenFormatConverter** is a Python tool designed to convert proprietary `.odr` 3D model files (used in GTA IV for maps and weapons) into the widely supported `.obj` format, including `.mtl` material files. This makes it easy to import these models into any standard 3D modeling software.
+
+---
 
 ## Features
 
-- **ODR to OBJ/MTL Conversion:**  
-  Seamlessly converts `.odr` files into a pair of `.obj` and `.mtl` files that can be imported into most 3D modeling software.
+* **ODR to OBJ/MTL Conversion**
+  Convert `.odr` files into `.obj` geometry files and accompanying `.mtl` material files seamlessly.
 
-- **Detailed Geometry Parsing:**  
-  Extracts vertex, normal, and texture coordinate data, and constructs faces with correct indexing to maintain model integrity.
+* **Detailed Geometry Parsing**
+  Extracts vertices, normals, UV coordinates, and faces, reconstructing models accurately.
 
-- **Material Handling:**  
-  Automatically processes shader and texture information to generate material files, ensuring that textures are correctly mapped.
+* **Material Handling**
+  Parses shaders and textures to generate correct material files, preserving texture mapping.
 
-- **LOD & Skeleton Parsing:**  
-  Supports parsing for Level of Detail (LOD) groups and skeletons, making it a robust option for complex models.
+* **LOD & Skeleton Support**
+  Handles Level of Detail groups and skeleton data for complex models.
 
-- **User-Friendly Tkinter Interface:**  
-  A built-in graphical user interface (GUI) allows users to easily select `.odr` files and monitor conversion progress, making it accessible even for those new to command-line tools.
+* **User-Friendly GUI**
+  Includes a simple Tkinter-based interface for easy file selection and conversion progress monitoring.
+
+---
 
 ## Getting Started
 
-1. **Installation:**  
-   Ensure you have Python installed. Clone the repository and install any dependencies if needed.
+1. **Installation**
+   Make sure Python is installed. Clone this repo and install dependencies if necessary.
 
-2. **Usage:**  
-   Run the tool using:
+2. **Usage**
+   Run the GUI with:
+
    ```bash
-   OpenFormatObjConverterGUI.pyw
+   python OpenFormatObjConverterGUI.pyw
    ```
-   Use the GUI to select an `.odr` file and initiate conversion. The converted `.obj` and `.mtl` files will be saved in the same directory as the original file.
 
-3. **Customization:**  
-   The source code is modular, making it easy to adjust parsing logic for different variants of the `.odr` format or extend functionality.
+   Select your `.odr` file through the GUI and start conversion. Output `.obj` and `.mtl` files will be saved alongside the original file.
+
+3. **Customization**
+   The codebase is modular, allowing easy modification or extension for other `.odr` variants or additional features.
+
+---
+
+### Notes
+
+* Currently supports map and weapon models only. Vehicle models are not yet supported.
+* No external DLL dependencies are required, keeping the tool lightweight and portable.
