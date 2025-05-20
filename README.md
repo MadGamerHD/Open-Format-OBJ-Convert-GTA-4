@@ -1,4 +1,4 @@
-This is a great, clear description of your **OpenFormatConverter** — it highlights exactly what it does and how users can get started without unnecessary jargon. Here’s a slightly polished and formatted version to make it GitHub-README ready, keeping your points intact and adding a bit of polish for readability:
+ polish
 
 ---
 
